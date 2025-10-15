@@ -117,6 +117,14 @@ def select_difficulty() -> str:
     return selected
 
 
+def display_header() -> None:
+    st.title("🚗 Car Picker Quiz")
+    st.caption(
+        "자동차 이미지를 보고 정답을 선택해 보세요. "
+        "Guess the correct make, model, and year from the image."
+    )
+
+
 def get_current_dataframe_row(df: pd.DataFrame) -> pd.Series:
     idx = st.session_state["question_order"][st.session_state["current_question_idx"]]
     return df.loc[idx]
