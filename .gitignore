@@ -1,0 +1,12 @@
+car_picker/dataset/
+car_picker/results/
+car_picker/app/__pycache__/
+car_picker/data/__pycache__/
+*.pyc
+*.pyo
+__pycache__/
+.DS_Store
+Thumbs.db
+.venv/
+venv/
+ENV/
