@@ -3,14 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>실시간 타이머</title>
+    <title>World Pulse Timer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="clock-container">
-      <h1 class="clock-title">현재 시각</h1>
-      <div class="clock" id="clock">--:--:--</div>
-      <div class="date" id="date">--월 --일 (---)</div>
+    <main class="app">
+      <header class="app-header">
+        <h1 id="title">세계 시각 타이머</h1>
+        <div class="controls">
+          <button type="button" class="language-toggle" id="languageToggle">
+            English
+          </button>
+        </div>
+      </header>
+      <section class="clock-panel">
+        <div class="time-display" id="timeDisplay">
+          <span class="time" id="timeValue">--:--:--</span>
+          <span class="ampm" id="ampm">--</span>
+        </div>
+        <div class="millis" id="millis">---</div>
+        <div class="date-line" id="dateLine">--</div>
+        <div class="timezone-label" id="timezoneLabel">Timezone</div>
+      </section>
+      <section class="map-panel">
+        <div class="map-wrapper">
+          <div class="map" id="map"></div>
+        </div>
+        <div class="map-instructions" id="mapInstructions">
+          주요 도시를 클릭하여 타임존을 변경하세요.
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
